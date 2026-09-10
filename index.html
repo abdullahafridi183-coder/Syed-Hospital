@@ -1379,11 +1379,11 @@
   // Paste your deployed Google Apps Script Web App URL below.
   // See the setup instructions provided alongside this file.
   const CONFIG = {
-    GOOGLE_SCRIPT_URL: 'PASTE_YOUR_GOOGLE_SCRIPT_WEB_APP_URL_HERE'
+    GOOGLE_SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbyOgELYcaIr_B1SeczxL62p2hYJkJI9_9RNrJLni5ZBTh54BfiA8UyrbSFGkcFijWy9Hw/exec'
   };
 
   function sendToSheet(payload) {
-    if (!CONFIG.GOOGLE_SCRIPT_URL || CONFIG.GOOGLE_SCRIPT_URL.indexOf('PASTE_YOUR') === 0) {
+    if (!CONFIG.GOOGLE_SCRIPT_URL || CONFIG.GOOGLE_SCRIPT_URL.indexOf('https://script.google.com/macros/s/AKfycbyOgELYcaIr_B1SeczxL62p2hYJkJI9_9RNrJLni5ZBTh54BfiA8UyrbSFGkcFijWy9Hw/exec') === 0) {
       console.warn('GOOGLE_SCRIPT_URL is not configured yet — this submission was not saved anywhere. See setup instructions.');
       return Promise.resolve({ saved: false });
     }
